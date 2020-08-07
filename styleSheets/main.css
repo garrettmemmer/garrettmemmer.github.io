@@ -30,6 +30,7 @@ body{
   border: 1px solid #7e7e7e;
 }
 div.top {
+  text.align: center;
   margin-bottom: 30px;
 	background-color: purple;
 }
