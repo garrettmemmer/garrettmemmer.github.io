@@ -33,7 +33,10 @@ div.top {
   text.align: center;
   width: 100%;
   margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 	background-color: purple;
+  border: 1px solid #7e7e7e;
 }
 
 div.top a{
