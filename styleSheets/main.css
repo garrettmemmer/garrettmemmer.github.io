@@ -29,3 +29,17 @@ body{
   margin-bottom: 20px;
   border: 1px solid #7e7e7e;
 }
+div.top {
+  margin-bottom: 20px;
+	background-color: purple;
+}
+
+div.top a{
+	color: white;
+	text-decoration: none;
+}
+
+div.top a:hover{
+	color: white;
+	text-decoration: underline;
+}
