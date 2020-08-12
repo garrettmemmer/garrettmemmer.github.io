@@ -51,7 +51,7 @@ div.top a:hover{
 	text-decoration: underline;
 }
 
-#PortfolioHeader {
+div.PortfolioHeader {
   text-align: center;
   color: white;
   width: 100%;
