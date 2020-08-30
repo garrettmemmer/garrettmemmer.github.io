@@ -64,13 +64,13 @@ div.top a:hover{
   border: 1px solid #7e7e7e;
 }
 
-#cont{
+#cont {
   float: left;
   margin-left: 47px;
   display: inline-table;
 }
 
-#bottom{
+#bottom {
   postition:relative;
   float: left;
   margin-left: 95px;
