@@ -76,6 +76,14 @@ div.top a:hover{
   margin-left: 95px;
 }
 
+
+.bottom img{
+  float: left;
+  vertical-align: bottom;
+  width: 80%;
+  height: 110px;
+}
+
 #viewNav1{
   float: left;
   vertical-align: bottom;
