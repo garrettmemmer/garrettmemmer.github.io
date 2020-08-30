@@ -93,6 +93,13 @@ div.singleBox{
   border: 1px solid #d3d3d3;
 }
 
+#singleBox {
+  background-color: #ffffff;
+  border: 1px solid #7e7e7e;
+  border-top: 0px;
+  margin-top: 20px;
+}
+
 #singleBox:first-of-type {
   margin-top: 0px;
 }
