@@ -58,7 +58,7 @@ div.top a:hover{
   background-color: #304866;
   font-size: 30px;
   font-family: "Lobster";
-  padding-top: 10px;
+  padding-top: 100px;
   padding-bottom: 10px;
   margin-bottom: 100px;
   border: 1px solid #7e7e7e;
@@ -77,14 +77,8 @@ div.top a:hover{
 }
 
 #viewNav1{
-  text-align: center;
-  color: white;
-  width: 100%;
-  background-color: #304866;
-  font-size: 30px;
-  font-family: "Lobster";
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #7e7e7e;
+  float: left;
+  vertical-align: bottom;
+  width: 80%;
+  height: 110px;
 }
