@@ -36,6 +36,7 @@ div.top {
   width: 50%;
   margin-bottom: 30px;
   padding-top: 10px;
+  padding-left: 50px;
   padding-bottom: 10px;
 	background-color: purple;
   border: 1px solid #7e7e7e;
@@ -63,6 +64,9 @@ div.top a:hover{
   margin-bottom: 100px;
   border: 1px solid #7e7e7e;
 }
+
+
+
 
 #cont {
   float: left;
