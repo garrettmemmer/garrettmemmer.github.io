@@ -84,9 +84,8 @@ div.top a:hover{
   height: 110px;
 }
 
-#viewNav1{
-  float: left;
+div.viewNav1{
+  width: 688px;
   vertical-align: bottom;
-  width: 80%;
-  height: 110px;
+  border: 1px solid #d3d3d3;
 }
