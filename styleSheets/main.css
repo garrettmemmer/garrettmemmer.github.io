@@ -71,7 +71,7 @@ div.top a:hover{
 }
 
 #bottom {
-  postition:relative;
+  position: relative;
   float: left;
   margin-left: 95px;
 }
