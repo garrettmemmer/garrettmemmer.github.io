@@ -1,49 +1,38 @@
-<html>
-	<head>
-		<title>Garrett Memmer Portfolio</title>
-		<link rel="stylesheet" type="text/css" href="styleSheets/main.css">
-	</head>
-
-	<body>  <!--  class = "bg-black muli">-->
-		<div id="container">
-			<div id="wrap">
-				<div id="header">Garrett Memmer</div>
-				<div class="top">
-					<a href="https://garrettmemmer.github.io/">Home</a>
-					<a href="">Resume</a>
-					<a href="">Skills(TEST1)</a>
-				</div>
-
-<!-- start of homepage-->
-		<!--<div id="container">--><!-- dont think i need these two lines-->
-		<!--	<div id="wrap" >-->
-				<div id="PortfolioHeader">Welcome to my Page</div>
-
-    		<!-- content here -->
-				<div id="cont">
-					<div id="viewNav">
-						<div id="singleBox"> <!-- BareBones for entries -->
-							<img src="" alt> <!--alt will make it so if the image cant show the code will still work -->
-							<div class="titleHeader">
-								<p id= "lifestyle">Title</p>
-							</div>
-							<p class="transform">description n' shit tehiojeroipjerigjeroigjeropigjeroigh</p>
-							<a href="">Project 1</a>
-						</div>
-
-						<div id="viewNav2"> <!-- BareBones for entries -->
-							<img src="" alt> <!--alt will make it so if the image cant show the code will still work -->
-							<p id= "lifestyle">Title2</p>
-							<p class="transform">description2 n' other shit</p>
-							<a href="">Project 2</a>
-						</div>
-					</div>
-			  </div>
-			</div>
-		</div>
-
-					<!--possibly more items here -->
-
-
-	</body>
+<html> 
+  <head>
+    <title>Garrett Memmer</title>
+    <script type="text/javascript" src="https://v1.vuejs.org/js/vue.js"></script> <!--dev version, switch to prod when ready to deploy--> 
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+  </head>
+  
+  <body>
+    <div id="container">
+      <div id="wrap">
+        <div id="header">
+          {{ name }}
+        </div>
+        
+        <div id="leftNav">
+          <div class="titleHeader">
+            <p>Links</p>
+          </div>
+          <p class="clickable" v-for="nav in navs" v-on:click="changeNav($index)"> {{ nav.title }} </p>
+        </div>
+        
+        <div id="viewNav">
+          <div id="singleBox" v-for="temp in temps">
+            <div class="titleHeader">
+              <p> {{ temp.title }} </p>
+            </div>
+            <p> {{ temp.description }} </p>
+            <a class="srcLinks" v-bind:href="temp.source">{{ temp.sourceName }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
 </html>
