@@ -25,7 +25,7 @@ var arg = new Vue({
       ],
       
       skills: [
-        { title: '--', description:'--' },
+        { title: 'TEST', description:'TEST TEST TEST TEST' },
         { title: '--', description:'--' },
         { title: '--', description:'--' },
         { title: '--', description:'--' },
