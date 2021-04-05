@@ -11,22 +11,29 @@
   <body>
     <nav id="mainNav">
       <div class="logo">
-        <a>Garrett Memmer</a>
+        <div id="nameLogo">
+          <a>Garrett Memmer</a>
+        </div>
       </div>
-      <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">FAQs</a>
-        </li>
-        <li>
-          <a href="#">Services</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-      </ul>
+        <div class="titleHeader"></div>
+        
+        <ul class="clickable" v-for="nav in navs" v-on:click="changeNav($index)"> {{ nav.title }}</ul>
+      
+          <li>
+            <a href="#">{ nav.title }}</a>
+          </li>
+          <li>
+            <a href="#">{ nav.title }}</a>
+          </li>
+          <li>
+            <a href="#">{{ nav.title }}</a>
+          </li>
+          <li>
+            <a href="#">{ nav.title }}</a>
+          </li>
+        </ul>
+        
+        </div>
     </nav>
     </nav>
     
@@ -35,14 +42,14 @@
         <div id="header">
           {{ name }}
         </div>
-        
+        <!--
         <div id="leftNav">
           <div class="titleHeader">
             <p>Links</p>
           </div>
-          <p class="clickable" v-for="nav in navs" v-on:click="changeNav($index)"> {{ nav.title }} </p>
+          <p class="clickable" v-for="nav in navs" v-on:click="changeNav($index)"> {{ nav.title }} </p>   this is probably what will help male the top links clickable
         </div>
-        
+        -->
         <div id="viewNav">
           <div id="singleBox" v-for="temp in temps">
             <div class="titleHeader">
