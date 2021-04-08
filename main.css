@@ -145,6 +145,7 @@ body {
     border: 1px solid #7e7e7e;
     border-left: 0px;
     border-right: 0px;
+    padding-top: 5px;
   }
   
   div.titleHeader p{
