@@ -19,23 +19,14 @@
           </div>
 
             <div class="titleHeader">
-              <p class="clickable" v-for="nav in navs" v-on:click="changeNav($index)"> {{ nav.title }} </p> 
+              <a class="clickable" v-for="nav in navs" v-on:click="changeNav($index)"> {{ nav.title }} </a> 
             </div>
-          </div>
+        </div>
 
         <div id="header">
           {{ navs[activeIndex].title }}
         </div>
 
-
-        <!--
-        <div id="leftNav">
-          <div class="titleHeader">
-            <p>Links</p>
-          </div>
-          <p class="clickable" v-for="nav in navs" v-on:click="changeNav($index)"> {{ nav.title }} </p>   this is probably what will help male the top links clickable
-        </div>
-        -->
         <div id="viewNav">
           <div id="singleBox" v-for="temp in temps">
             <div class="titleHeader">
@@ -44,10 +35,10 @@
             <p> {{ temp.description }} </p>
             <a class="srcLinks" v-bind:href="temp.source">{{ temp.sourceName }}</a>
           </div>
-          <!--<footer>Created by Garrett Memmer</footer>  will need to implement this after removing whatever tf waynes code does --> 
         </div>
       </div>
     </div>
+
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
