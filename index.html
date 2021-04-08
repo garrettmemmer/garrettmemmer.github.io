@@ -8,40 +8,26 @@
     <meta charset="UTF-8">
   </head>
   
-  <body>
-    <nav id="mainNav">
-      <div class="logo">
-        <div id="nameLogo">
-          <a>Garrett Memmer</a>
-        </div>
-      </div>
-        <div class="titleHeader"></div>
-        
-        <ul class="clickable" v-for="nav in navs" v-on:click="changeNav($index)"> {{ nav.title }}</ul>
-      
-          <li>
-            <a href="#">{ nav.title }}</a>
-          </li>
-          <li>
-            <a href="#">{ nav.title }}</a>
-          </li>
-          <li>
-            <a href="#">{{ nav.title }}</a>
-          </li>
-          <li>
-            <a href="#">{ nav.title }}</a>
-          </li>
-        </ul>
-        
-        </div>
-    </nav>
-    </nav>
-    
+  <body>    
     <div id="container">
       <div id="wrap">
+        <div id="mainNav">
+          <div class="logo">
+            <div id="nameLogo">
+              <a>{{name}}</a>
+            </div>
+          </div>
+
+            <div class="titleHeader">
+              <p class="clickable" v-for="nav in navs" v-on:click="changeNav($index)"> {{ nav.title }} </p> 
+            </div>
+          </div>
+
         <div id="header">
-          {{ name }}
+          {{ navs[activeIndex].title }}
         </div>
+
+
         <!--
         <div id="leftNav">
           <div class="titleHeader">
@@ -62,9 +48,6 @@
         </div>
       </div>
     </div>
-
-    
-
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
