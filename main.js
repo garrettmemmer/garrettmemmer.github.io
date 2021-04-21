@@ -34,7 +34,7 @@ var arg = new Vue({
       about: [
         { title: 'About Me', description: 'My name is Garrett Memmer and I am a Computer Science graduate from Indiana University with a passion for all things computers. I enjoy programming, making video games, and working with electronics. During my free time I like to workout, read science fiction, and play video games.'},
         { title: 'Git Repository', description: 'My github is found at:', source:'https://github.com/garrettmemmer', sourceName:'Github' },
-        { title: 'Email Address', description: 'My email address is found at:', source:'mailto:garrettmemmer@gmail.com', sourceName:'garrettmemmer@gmail.com' },
+        { title: 'Email Address', description: 'My email address is found at:', sourceName:'garrettmemmer@gmail.com' },
         { title: 'Eagle Scout', description: 'Through Boy Scouts I was able to achieve the Rank of Eagle Scout by refurbishing the playground at my local church. To accomplish this task I managed 25 volunteers, $5000 in donations, and the organization/purchasing of all materials used.' },
       ]     
     },
