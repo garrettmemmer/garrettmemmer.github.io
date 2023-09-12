@@ -2,7 +2,7 @@ var arg = new Vue({
     el: '#wrap',
     
     data: {
-      name: 'Garrett Memmer',
+      name: 'Garrett Memmer :)',
 
       //currentTitle: 0,
       activeIndex: 0,
